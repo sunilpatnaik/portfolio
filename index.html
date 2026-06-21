@@ -182,28 +182,24 @@
   }
 
   .hero-photo-frame{
-    position:relative;
     width:min(280px,72vw);
+    border:1px solid var(--brass);
+    background:var(--navy-900);
+    box-shadow:var(--shadow);
   }
   .hero-photo-frame img{
     width:100%; display:block;
     filter:saturate(0.96) contrast(1.02);
-    border:1px solid var(--line);
-  }
-  .hero-photo-frame::before{
-    content:"";
-    position:absolute; top:14px; left:14px; right:-14px; bottom:-14px;
-    border:1px solid var(--brass);
-    z-index:-1;
   }
   .hero-tag{
-    position:absolute; bottom:-16px; left:-16px;
+    display:block;
     background:var(--burgundy);
     color:var(--ivory);
     font-family:'Space Mono',monospace;
     font-size:0.62rem; letter-spacing:0.14em; text-transform:uppercase;
-    padding:8px 12px;
-    box-shadow:var(--shadow);
+    padding:10px 14px;
+    text-align:center;
+    border-top:1px solid var(--brass);
   }
 
   .hero-text{margin-top:30px;}
