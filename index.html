@@ -460,9 +460,15 @@
   /* ============ GALLERY ============ */
   .gallery-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(320px, 420px));
-    gap:28px;
+    grid-template-columns:repeat(3, 1fr);
+    gap:22px;
     margin-top:8px;
+  }
+  @media (max-width:880px){
+    .gallery-grid{grid-template-columns:repeat(2, 1fr);}
+  }
+  @media (max-width:580px){
+    .gallery-grid{grid-template-columns:1fr;}
   }
   .gallery-card{
     background:var(--navy-900);
@@ -481,22 +487,22 @@
     transition:transform .6s ease;
   }
   .gallery-card:hover .gallery-img-wrap img{transform:scale(1.04);}
-  .gallery-body{padding:24px 26px 28px;}
+  .gallery-body{padding:20px 20px 22px;}
   .gallery-kicker{
-    font-family:'Space Mono',monospace; font-size:0.66rem;
-    letter-spacing:0.12em; text-transform:uppercase; color:var(--brass-light);
-    margin-bottom:10px; display:block;
+    font-family:'Space Mono',monospace; font-size:0.62rem;
+    letter-spacing:0.1em; text-transform:uppercase; color:var(--brass-light);
+    margin-bottom:9px; display:block;
   }
   .gallery-body p{
-    font-size:0.96rem; line-height:1.65; color:var(--ivory-dim);
+    font-size:0.9rem; line-height:1.6; color:var(--ivory-dim);
   }
   .gallery-tags{
-    margin-top:16px; display:flex; flex-wrap:wrap; gap:8px;
+    margin-top:14px; display:flex; flex-wrap:wrap; gap:7px;
   }
   .gallery-tags span{
-    font-family:'Space Mono',monospace; font-size:0.66rem;
-    letter-spacing:0.04em; color:var(--brass-light);
-    border:1px solid var(--line); padding:5px 10px;
+    font-family:'Space Mono',monospace; font-size:0.6rem;
+    letter-spacing:0.03em; color:var(--brass-light);
+    border:1px solid var(--line); padding:4px 8px;
   }
 
   /* ============ PHILOSOPHY ============ */
