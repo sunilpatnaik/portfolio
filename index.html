@@ -10,17 +10,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --navy-950:#ffffff;
-    --navy-900:#f7f5ef;
-    --navy-800:#f0ece1;
-    --navy-700:#e7e0d0;
+    --navy-950:#f8f3e8;
+    --navy-900:#ffffff;
+    --navy-800:#f3ecd9;
+    --navy-700:#ece2c8;
     --brass:#b8923e;
     --brass-light:#96712b;
     --burgundy:#8a2c35;
     --ivory:#201f1a;
     --ivory-dim:#6b6659;
     --ink:#201f1a;
-    --paper:#f6f3ea;
+    --paper:#f1ead9;
     --line:rgba(184,146,62,0.30);
     --line-soft:rgba(32,31,26,0.09);
     --shadow:0 24px 50px -28px rgba(32,28,18,0.20);
@@ -100,14 +100,14 @@
   /* ============ TOP BAR ============ */
   .topbar{
     position:sticky; top:0; z-index:50;
-    background:rgba(255,255,255,0.80);
+    background:rgba(248,243,232,0.82);
     backdrop-filter:blur(10px);
     border-bottom:1px solid transparent;
     transition:border-color .35s ease, background .35s ease;
   }
   .topbar.scrolled{
     border-bottom:1px solid var(--line);
-    background:rgba(255,255,255,0.96);
+    background:rgba(248,243,232,0.97);
   }
   .topbar-inner{
     display:flex; align-items:center; justify-content:space-between;
@@ -512,8 +512,11 @@
     position:relative;
   }
   .philosophy .mark{
-    font-family:'Fraunces',serif; font-size:5rem; color:var(--brass);
-    opacity:0.5; line-height:1; margin-bottom:-10px;
+    font-family:'Fraunces',serif; font-size:5rem; color:var(--ink);
+    line-height:1; margin-bottom:-10px;
+  }
+  .philosophy .mark.close{
+    margin-bottom:0; margin-top:-18px;
   }
   .philosophy blockquote{
     font-family:'Fraunces',serif; font-style:italic; font-weight:400;
@@ -988,7 +991,8 @@
   <section class="philosophy">
     <div class="wrap">
       <div class="mark">“</div>
-      <blockquote>Leadership anchored in Product, Process, and People — ensuring alignment between guest experience, operational excellence, and financial performance. Focused on delivering sustainable profitability, strong team culture, and elevated luxury positioning across all business segments.”</blockquote>
+      <blockquote>Leadership anchored in Product, Process, and People — ensuring alignment between guest experience, operational excellence, and financial performance. Focused on delivering sustainable profitability, strong team culture, and elevated luxury positioning across all business segments.</blockquote>
+      <div class="mark close">”</div>
     </div>
   </section>
 
